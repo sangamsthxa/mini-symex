@@ -13,7 +13,9 @@
       ],
       "els": []
     },
-    { "tag": "Assert", "cond": { "tag": "Lt", "left": { "tag": "Var", "name": "x" }, "right": { "tag": "Int", "value": 0 } } }
-
+    {
+      "tag": "Assert",
+      "cond": { "tag": "Le", "left": { "tag": "Int", "value": 0 }, "right": { "tag": "Var", "name": "x" } }
+    }
   ]
 }
