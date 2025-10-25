@@ -1,0 +1,19 @@
+{
+  "params": ["x"],
+  "body": [
+    {
+      "tag": "If",
+      "cond": { "tag": "Lt", "left": { "tag": "Var", "name": "x" }, "right": { "tag": "Int", "value": 0 } },
+      "then": [
+        {
+          "tag": "Assign",
+          "name": "x",
+          "expr": { "tag": "Sub", "left": { "tag": "Int", "value": 0 }, "right": { "tag": "Var", "name": "x" } }
+        }
+      ],
+      "els": []
+    },
+    { "tag": "Assert", "cond": { "tag": "Lt", "left": { "tag": "Var", "name": "x" }, "right": { "tag": "Int", "value": 0 } } }
+
+  ]
+}
